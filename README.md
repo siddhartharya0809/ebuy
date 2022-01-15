@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# EBUY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It is project made using React. It is ecommerce website which has many functionalities.
 
 ## Available Scripts
 
