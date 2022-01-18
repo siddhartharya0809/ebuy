@@ -1,4 +1,4 @@
-import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
@@ -77,6 +77,9 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+// functionality to handle slider navigation
+// It is usefull when we have reached the last slider so from there how it will go back to first one
+// or when we have reached the first slider so from there how it will go to the last one
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
@@ -114,3 +117,4 @@ const Slider = () => {
 };
 
 export default Slider;
+
