@@ -8,7 +8,7 @@ const Container = styled.div`
     rgba(255,255,255,0.5)
     ),
     url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
-      center;
+    center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-  width: 25%; 
+  width: 40%; 
   padding: 20px;
   background: white;
 `
@@ -28,7 +28,7 @@ const Title = styled.h1`
 
 const Form = styled.form`
   display: flex;
-  flex-direction: coloumn;
+  flex-wrap: wrap;
 `
 
 const Input = styled.input`
