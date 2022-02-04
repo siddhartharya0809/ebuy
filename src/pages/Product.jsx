@@ -4,6 +4,7 @@ import Anouncement from "../components/Anouncement";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { Add, Remove } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const Container = styled.div``
 
@@ -154,7 +155,9 @@ const Product = () => {
               <Add />
             </AmountContainer>
 
-            <Button>ADD TO CART</Button>
+            <Link to="/cart">
+              <Button>ADD TO CART</Button>
+            </Link>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
