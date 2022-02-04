@@ -99,7 +99,7 @@ const Navbar = () => {
         {/* -----------Center part of Navbar------------------- */}
         <Center>
           {/* I am not able to bold this EBUY  */}
-          <Link to="/" style={{ "text-decoration": "none", "color": "black" }}>
+          <Link to="/" style={{ "textDecoration": "none", "color": "black" }}>
             <Logo> EBUY. </Logo>
           </Link>
         </Center>

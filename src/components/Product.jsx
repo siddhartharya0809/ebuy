@@ -1,6 +1,7 @@
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import { Link } from 'react-router-dom';
 
 import styled from "styled-components";
 
@@ -71,12 +72,19 @@ const Product = ({ item }) => {
       <Circle />
       <Image src={item.img} />
       <Info>
-        <Icon>
-          <ShoppingCartOutlinedIcon />
-        </Icon>
-        <Icon>
-          <SearchOutlinedIcon />
-        </Icon>
+        {/* button to put product in cart  */}
+        <Link to="/cart">
+          <Icon>
+            <ShoppingCartOutlinedIcon />
+          </Icon>
+        </Link>
+
+        {/* button to see the product */}
+        <Link to="product">
+          <Icon>
+            <SearchOutlinedIcon />
+          </Icon>
+        </Link>
         <Icon>
           <FavoriteBorderOutlinedIcon />
         </Icon>

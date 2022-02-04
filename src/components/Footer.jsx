@@ -1,4 +1,5 @@
 import { Facebook, GitHub, Instagram, LinkedIn, Mail, Phone, Room } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 
@@ -76,7 +77,11 @@ const Footer = () => {
 		<Container>
 			{/* Left part of Footer */}
 			<Left>
-				<Logo>Ebuy.</Logo>
+				<Link to="/" style={{ "text-decoration": "none", "color": "black" }}>
+					<Logo>
+						Ebuy
+					</Logo>
+				</Link>
 				<Desc>There are many variation of passage of Lorem Ipsum available, but the majority
 					have suffered alteration in some form, by injected humour, or randmoised words
 					which don't look even slightly believable
@@ -101,16 +106,56 @@ const Footer = () => {
 			<Center>
 				<Title>Useful link</Title>
 				<List>
-					<ListItem>Home</ListItem>
-					<ListItem>Cart</ListItem>
-					<ListItem>Man Fashion</ListItem>
-					<ListItem>Woman Fashion</ListItem>
-					<ListItem>Accessories</ListItem>
-					<ListItem>My Account</ListItem>
-					<ListItem>Order Tracking</ListItem>
-					<ListItem>Wishlist</ListItem>
-					<ListItem>Wishlist</ListItem>
-					<ListItem>Terms</ListItem>
+					<ListItem>
+						<Link to="/" style={{ "text-decoration": "none", "color": "black" }}>
+							Home
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/cart" style={{ "text-decoration": "none", "color": "black" }}>
+							Cart
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/product-list" style={{ "text-decoration": "none", "color": "black" }}>
+							Woman Fashion
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/product-list" style={{ "text-decoration": "none", "color": "black" }}>
+							Accessories
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/product-list" style={{ "text-decoration": "none", "color": "black" }}>
+							Man Fashion
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/" style={{ "text-decoration": "none", "color": "black" }}>
+							My Account
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/cart" style={{ "text-decoration": "none", "color": "black" }}>
+							Order Tracking
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/cart" style={{ "text-decoration": "none", "color": "black" }}>
+							Wishlist
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/cart" style={{ "text-decoration": "none", "color": "black" }}>
+							Wishlist
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link to="/" style={{ "text-decoration": "none", "color": "black" }}>
+							Terms
+						</Link>
+					</ListItem>
 				</List>
 			</Center>
 
