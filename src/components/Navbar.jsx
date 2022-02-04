@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import SearchIcon from '@material-ui/icons/Search';
 import Badge from '@material-ui/core/Badge';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import { Link } from 'react-router-dom';
 
 
 // import SearchIcon from '@mui/icons-material/Search';
@@ -15,6 +16,8 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 const Container = styled.div`
   height: 60px;
 `
+
+// styling the links using styled components
 
 const Wrapper = styled.div`
   padding: 10px 20px;
@@ -28,6 +31,7 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  font-weight: bold;
 `;
 
 const Language = styled.span`
@@ -60,6 +64,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: 800;
+  text-decoration: none;
 `;
 
 // Right part of Navbar
@@ -75,6 +80,8 @@ const MenuItems = styled.div`
   cursor: pointer;
   margin-left: 25px;
 `
+
+
 
 const Navbar = () => {
   return (
@@ -92,18 +99,31 @@ const Navbar = () => {
         {/* -----------Center part of Navbar------------------- */}
         <Center>
           {/* I am not able to bold this EBUY  */}
-          <Logo style={{ fontWeight: "bolder" }}> EBUY. </Logo>
+          <Link to="/" style={{ "text-decoration": "none", "color": "black" }}>
+            <Logo> EBUY. </Logo>
+          </Link>
         </Center>
         {/* ---------- Right part of Navbar ------------------- */}
 
         <Right>
-          <MenuItems>REGISTER</MenuItems>
-          <MenuItems>SIGN IN</MenuItems>
-          <MenuItems>
-            <Badge badgeContent={5} color="primary">
-              <ShoppingCartOutlinedIcon />
-            </Badge>
-          </MenuItems>
+          {/* register button and it's router */}
+          <Link to="/register" style={{ "text-decoration": "none", "color": "black" }}>
+            <MenuItems>REGISTER</MenuItems>
+          </Link>
+
+          {/* login or sign-in button and it's router */}
+          <Link to="/login" style={{ "text-decoration": "none", "color": "black" }}>
+            <MenuItems>SIGN IN</MenuItems>
+          </Link>
+
+          {/* shopping cart icon */}
+          <Link to="/cart" style={{ "text-decoration": "none", "color": "black" }}>
+            <MenuItems>
+              <Badge badgeContent={5} color="primary">
+                <ShoppingCartOutlinedIcon />
+              </Badge>
+            </MenuItems>
+          </Link>
         </Right>
       </Wrapper>
     </Container>
