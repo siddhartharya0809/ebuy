@@ -47,7 +47,7 @@ export const popularProducts = [
   },
   {
     id: 2,
-    img: "https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+    img: "https://cdn.shopify.com/s/files/1/0269/3929/3744/products/4_014cd07d-75d7-4cd3-b28b-31935d89891b_600x600.jpg?v=1639554242",
   },
   {
     id: 3,
